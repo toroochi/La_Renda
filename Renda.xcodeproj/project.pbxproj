@@ -13,6 +13,8 @@
 		B48F23E828AE28FC00CA31CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F23E628AE28FC00CA31CC /* Main.storyboard */; };
 		B48F23EA28AE28FD00CA31CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F23E928AE28FD00CA31CC /* Assets.xcassets */; };
 		B48F23ED28AE28FD00CA31CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F23EB28AE28FD00CA31CC /* LaunchScreen.storyboard */; };
+		B4D37CF128BAA40500C5C873 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B4D37CF028BAA40500C5C873 /* FirebaseFirestore */; };
+		B4D37CF328BAA43400C5C873 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4D37CF228BAA43400C5C873 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		B48F23E928AE28FD00CA31CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48F23EC28AE28FD00CA31CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F23EE28AE28FD00CA31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D37CF228BAA43400C5C873 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D37CF128BAA40500C5C873 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				B48F23E228AE28FC00CA31CC /* SceneDelegate.swift */,
 				B48F23E428AE28FC00CA31CC /* ViewController.swift */,
 				B48F23E628AE28FC00CA31CC /* Main.storyboard */,
+				B4D37CF228BAA43400C5C873 /* GoogleService-Info.plist */,
 				B48F23E928AE28FD00CA31CC /* Assets.xcassets */,
 				B48F23EB28AE28FD00CA31CC /* LaunchScreen.storyboard */,
 				B48F23EE28AE28FD00CA31CC /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Renda;
+			packageProductDependencies = (
+				B4D37CF028BAA40500C5C873 /* FirebaseFirestore */,
+			);
 			productName = Renda;
 			productReference = B48F23DD28AE28FC00CA31CC /* Renda.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B48F23D428AE28FC00CA31CC;
+			packageReferences = (
+				B4D37CEF28BAA40500C5C873 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B48F23DE28AE28FC00CA31CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48F23ED28AE28FD00CA31CC /* LaunchScreen.storyboard in Resources */,
+				B4D37CF328BAA43400C5C873 /* GoogleService-Info.plist in Resources */,
 				B48F23EA28AE28FD00CA31CC /* Assets.xcassets in Resources */,
 				B48F23E828AE28FC00CA31CC /* Main.storyboard in Resources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4D37CEF28BAA40500C5C873 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4D37CF028BAA40500C5C873 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D37CEF28BAA40500C5C873 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B48F23D528AE28FC00CA31CC /* Project object */;
 }
