@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     @IBAction func tapTapButton(){
         tapCount = tapCount + 1
         countLabel.text = String(tapCount)
-        firestore.collection("counts").document("share").setData(["count": tapButton])
+        firestore.collection("counts").document("share").setData(["count": tapCount])
     }
 }
 
